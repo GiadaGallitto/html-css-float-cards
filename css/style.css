@@ -5,17 +5,53 @@
 }
 
 .container{
-    width: 85%;
+    width: 65%;
     margin: 2rem auto;
     /* background-color: aquamarine; */
-    font-family: 'Fredoka One', cursive;
 }
 
 header{
     text-align: center;
 }
 
+h1, h2{
+    font-family: 'Fredoka One', cursive;
+}
+
 h1{
     padding-bottom: 1.5rem;
     color: #e53170;
+}
+
+.col{
+    width: calc(100% / 3);
+    background-color: #0f0e17;
+    color: white;
+    line-height: 1.6rem;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+article>img{
+    height: 6rem;
+    float: left;
+    margin-right: 2rem;
+}
+
+div.text-col{
+    padding-top: 0.5rem;
+}
+
+.col h2{
+    font-size: 1.1rem;
+}
+
+div>a{
+    color: #17ccf2;
 }
