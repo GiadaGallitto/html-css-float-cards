@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(../img/wallpaper.jpg);
+    background-size: cover;
+}
+
 .container{
     width: 65%;
     margin: 2rem auto;
-    /* background-color: aquamarine; */
+    color: white;
+    font-weight: bolder;
 }
 
 header{
@@ -38,7 +44,14 @@ h1{
     font-size: 1rem;
     margin: 0 1rem 2.5rem 1rem;
     float: left;
-    box-shadow: 1px 1px 5px 8px #c4c4c3;
+}
+
+section.columns article:nth-child(4){
+    clear: left;
+}
+
+.col:hover{
+    box-shadow: 1px 1px 5px 8px #06447d;
 }
 
 article>img{
