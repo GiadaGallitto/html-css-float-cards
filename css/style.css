@@ -23,19 +23,22 @@ h1{
     color: #e53170;
 }
 
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .col{
-    width: calc(100% / 3);
+    width: calc( 100% / 3 - 2rem);
     background-color: #0f0e17;
     color: white;
     line-height: 1.6rem;
     font-family: 'Fredoka', sans-serif;
     font-size: 1rem;
-}
-
-.clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
+    margin: 0 1rem 2.5rem 1rem;
+    float: left;
+    box-shadow: 1px 1px 5px 8px #c4c4c3;
 }
 
 article>img{
